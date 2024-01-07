@@ -83,14 +83,15 @@
     .links li a{
         text-decoration: none;
         position: relative;
+        display: block;
     }
     .links li a::after{
+        display: block;
         content: "";
         height: 0;
         width: 0;
-        position: absolute;
-        top: 100%;
-        left: 0%;
+        border: 1px solid rgba(255, 0, 0, 0);
+        margin: auto;
         transition: width .3s;
     }
     .links li a:hover::after{
